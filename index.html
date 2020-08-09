@@ -1,44 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dark/Light Theme</title>
-  <link rel='stylesheet' href="main.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
-</head>
-<body>
-  
-  <header class='nav'>
-   <div class='nav-container'>
- <ul class='nav-list'>
-      <li class='nav-list--item'><a class='nav-list--link'>HOME</a></li>
-      <li class='nav-list--item'><a class='nav-list--link'>ABOUT</a></li>
-      <li class='nav-list--item'><a class='nav-list--link'>PROJECTS</a></li>
-      <li class='nav-list--item'><a class='nav-list--link'>CONTACT</a></li>
-    </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark/Light Theme</title>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Noto+Sans+JP:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
 
-      <div class='nav-mode'>
-        <h3 class='mode-name'>Light Mode</h3>
-        <i  class='fas fa-sun fa-2x'></i>
+    <!--Header-->
+    <header class="nav">
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-list--item">
+            <a href="#home" class="nav-list--link">HOME</a>
+          </li>
+          <li class="nav-list--item">
+            <a href="#about" class="nav-list--link">ABOUT</a>
+          </li>
+          <li class="nav-list--item">
+            <a href="#projects" class="nav-list--link">PROJECTS</a>
+          </li>
+          <li class="nav-list--item">
+            <a href="#contact" class="nav-list--link">CONTACT</a>
+          </li>
+        </ul>
+
+        <div class="nav-mode">
+          <h3 class="mode-name">Light Mode</h3>
+          <i id='icon' class="fas fa-moon fa-2x"></i>
+        </div>
+
+        <div class="nav-toggle">
+          <input class="nav-input" type="checkbox" />
+          <span class="nav-span"></span>
+        </div>
+      </div>
+    </header>
+
+       <!--End of Header-->
+
+       <!--Home Section-->
+
+    <section id="home">
+      <h1>Custom Title Here</h1>
+      <h2>Welcome to the Website</h2>
+    </section>
+    <section id="projects">
+      <h1>Undraw illustration</h1>
+      <div class="img-container">
+        <div class="img-card">
+          <h5 class="img-card--title">Web Innovation</h5>
+          <img
+            class="img-responsive"
+            src="img/undraw_conceptual_idea_light.svg"
+            alt=""
+            id='image-1'
+          />
+        </div>
+        <div class="img-card">
+          <h5 class="img-card--title">Problem Solving</h5>
+          <img
+            class="img-responsive"
+            src="img/undraw_feeling_proud_light.svg"
+            alt=""
+            id='image-2'
+          />
+        </div>
+        <div class="img-card">
+          <h5 class="img-card--title">High Concept</h5>
+          <img
+            class="img-responsive"
+            src="img/undraw_proud_coder_light.svg"
+            alt=""
+            id='image-3'
+          />
+        </div>
+      </div>
+    </section>
+  <!--End of section-->
+
+      <!--About Section-->
+
+    <section id="about">
+      <h1>Buttons</h1>
+      <div class="btn-container">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-disabled" disabled>Disabled</button>
+        <button class="btn btn-primary-outline">Outline</button>
+        <button class="btn btn-secondary-outline">Alt Outline</button>
+        <button class="btn btn-disabled-outline" disabled>Disabled</button>
+      </div>
+      <div class='about-info'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae corporis tempore reiciendis voluptatum magnam deserunt, sed ratione porro id, iure laudantium repellendus ea temporibus explicabo odit vel laboriosam ipsam.</p>
+      </div>
+    </section>
+
+        <!--End of section-->
+        <!--Contact section-->
+
+    <section id="contact">
+       <h1>Social</h1>
+      <div class='contact-social'>
        
-      </div>
-    
-      <div class='nav-toggle'>
-       <input class='nav-input' type='checkbox' />   
-      <span class='nav-span'></span>
-      </div>
+      <i class='fab fa-facebook-square fa-6x'></i>
+      <i class='fab fa-instagram-square fa-6x'></i>
+      <i class='fab fa-github-square fa-6x'></i>
+      <i class='fab fa-twitter-square fa-6x'></i>
+      <i class='fab fa-twitch fa-6x'></i>
+      <i class='fab fa-youtube-square fa-6x'></i>
      
+      </div>
+      
+    </section>
 
+      <!--End of section-->
 
-   </div>
-   
-  </header>
-  <section>
-    <h1>Custom Title Here</h1>
-  </section>
-
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
